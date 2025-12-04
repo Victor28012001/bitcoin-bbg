@@ -1129,7 +1129,6 @@ label:focus {
   color: black;
 }
 
-
 /* bitcoin integration */
 /* Add to your existing CSS */
 #bitcoin-hud {
@@ -1142,15 +1141,18 @@ label:focus {
   color: white;
   font-family: monospace;
   z-index: 1000;
+  width: fit-content;
 }
 
-.bitcoin-balance, .lightning-balance {
+.bitcoin-balance,
+.lightning-balance {
   display: flex;
   align-items: center;
   margin: 5px 0;
 }
 
-.bitcoin-icon, .lightning-icon {
+.bitcoin-icon,
+.lightning-icon {
   margin-right: 8px;
   font-weight: bold;
 }
@@ -1171,8 +1173,16 @@ label:focus {
 }
 
 @keyframes fadeInOut {
-  0%, 100% { opacity: 0; transform: translate(-50%, -40%); }
-  10%, 90% { opacity: 1; transform: translate(-50%, -50%); }
+  0%,
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  10%,
+  90% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 }
 
 #bitcoin-shop {
